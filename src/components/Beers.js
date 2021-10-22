@@ -28,8 +28,8 @@ class Beers extends Component {
       <div className="beerlist">
         <ol>
           {this.state.list.map((beer) => (
-            <li key={beer.id}>
-              <Link to={`/beer/${beer.id}`}>{beer.name}</Link>
+            <li key={beer.beerid}>
+              <Link to={`/beer/${beer.beerid}`}>{beer.name}</Link>
               <br></br>
               <img src={beer.image} alt="Beer" />
               <br></br>
